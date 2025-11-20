@@ -1,0 +1,14 @@
+================= Третья лаба =================
+x86_64-w64-mingw32-gcc lab_3/main.c -o app.exe -lcomctl32 -lgdi32                                   - Компиляция
+wine app.exe                                                                                        - Запуск
+
+
+
+================= Четвертая лаба =================
+g++ -fPIC lab_4/qt.cpp -o app `pkg-config --cflags --libs Qt5Widgets gtk+-3.0` -lsqlite3 && ./app    - Компиляция (для qt)  и запуск
+g++ -fPIC lab_4/gtk.cpp -o app `pkg-config --cflags --libs Qt5Widgets gtk+-3.0` -lsqlite3 && ./app   - Компиляция (для gtk) и запуск
+
+
+
+================= Шестая лаба =================
+g++ lab_6/main.cpp -o app -fopenmp && ./app                                                          - Компиляция и запуск
